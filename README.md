@@ -6,7 +6,7 @@ This project is a smart and simple **multimodal chatbot** that can:
 - 🖼️ Generate **captions for uploaded images**
 - 🖼️💬 Answer **questions about uploaded images**
 
-It leverages the **Gemini 1.5 Flash API** (Google) and **Replicate API (Stable Diffusion)**, with a clean UI built using **Streamlit**.
+It leverages the **Gemini 1.5 Flash API** (Google), with a clean UI built using **Streamlit**.
 
 ---
 
@@ -15,7 +15,6 @@ It leverages the **Gemini 1.5 Flash API** (Google) and **Replicate API (Stable D
 - 🖥️ `Streamlit` – Interactive frontend for the chatbot  
 - 🤖 `google-generativeai` – Gemini 1.5 Flash API integration  
 - 🖼️ `Pillow` – Image upload and handling  
-- 🧪 `Replicate` – Text-to-image generation (Stable Diffusion XL)  
 - 🔐 `python-dotenv` – Secure API key management via `.env`
 
 ---
@@ -26,7 +25,7 @@ It leverages the **Gemini 1.5 Flash API** (Google) and **Replicate API (Stable D
 ✅ Image captioning via uploaded images  
 ✅ Image + prompt response (multimodal)  
 ✅ Clean and simple Streamlit UI  
-✅ Free-tier friendly (Gemini & Replicate APIs)
+✅ Free-tier friendly (Gemini API)
 
 ---
 
@@ -43,14 +42,14 @@ Task2_MultimodalChatbot/
 
 ## 🔧 Setup Instructions
 
-### 1. Clone the repository or create your project folder
+### 1. Clone the repository
 git clone https://github.com/your-username/Task2_MultimodalChatbot.git
+cd Task2_MultimodalChatbot
 ### 2. Install dependencies
 pip install -r requirements.txt
-### 3. Set API Keys in .env
-Create a file named .env and add:
-- GOOGLE_API_KEY=your_gemini_key_here
-- REPLICATE_API_TOKEN=your_replicate_key_here
+### 3. Set API Key in .env
+Create a .env file in the root directory and add your key:
+GOOGLE_API_KEY=your_gemini_key_here
 ### 4. Run the Streamlit app
 streamlit run app.py
 
@@ -58,18 +57,18 @@ streamlit run app.py
 
 ## 📸 Example Use
 
-**💬 Text Mode**  
-**Input:** What is the capital of France?  
-**Gemini Response:** Paris
+💬 Text Mode
+Input: What is the capital of France?
+Gemini Response: Paris
 
-**🖼️ Image Mode**  
-**Upload:** dog.jpg  
-**Gemini Caption:** A golden retriever puppy is sitting on green grass with a happy expression.
+🖼️ Image Mode
+Upload: dog.jpg
+Gemini Caption: A golden retriever puppy is sitting on green grass with a happy expression.
 
-**🖼️ + 💬 Image + Prompt Mode**  
-**Upload:** car.jpg  
-**Prompt:** What brand is this car?  
-**Gemini Response:** This appears to be a Tesla Model 3 based on the logo and design.
+🖼️ + 💬 Image + Prompt Mode
+Upload: car.jpg
+Prompt: What brand is this car?
+Gemini Response: This appears to be a Tesla Model 3 based on the logo and design.
 
 ---
 
@@ -86,7 +85,7 @@ streamlit run app.py
 
 ⚠️ Free-tier API usage is limited — upgrade for heavier workloads
 
-🔒 Keep your .env file private (add it to .gitignore)
+🔒 Keep your .env file private (it is ignored by Git)
 
 ☁️ This app runs fully online — no GPU required locally
 
