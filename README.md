@@ -106,5 +106,3 @@ Gemini Response: This appears to be a Tesla Model 3 based on the logo and design
 ## 👨‍💻 Developed by
 Pratham Modi
 📅 July 2025
-
----
