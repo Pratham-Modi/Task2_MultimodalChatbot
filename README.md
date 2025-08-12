@@ -29,6 +29,18 @@ It leverages the **Gemini 1.5 Flash API** (Google), with a clean UI built using 
 
 ---
 
+## 🧪 Testing & Evaluation
+
+The chatbot was tested manually with various text and image prompts to ensure relevant and coherent responses. Users can view past interactions within the app’s chat history tabs.
+
+---
+
+## 🔒 Security
+
+The `.env` file containing sensitive API keys is included in `.gitignore` to prevent accidental sharing of credentials.
+
+---
+
 ## 🧱 Folder Structure
 
 Task2_MultimodalChatbot/
